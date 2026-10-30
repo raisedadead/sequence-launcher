@@ -33,6 +33,16 @@ A key in one group does not conflict with the same key in another group. One hot
 - **Grid or List.** Large tiles by default, or rows with the type and path.
 - **Local and private.** One JSON file that you can edit and keep with your dotfiles. No network requests, no telemetry.
 
+## Screenshots
+
+The Grid layout, the default:
+
+![The Grid layout: one tile for each top-level binding, with the icon, the key, and the label](docs/images/grid.png)
+
+The List layout, with the type of each binding and the keys of the Places group:
+
+![The List layout: one row for each top-level binding, with the key, the label, and the type](docs/images/list.png)
+
 ## Requirements
 
 - macOS with [Raycast](https://www.raycast.com/)
