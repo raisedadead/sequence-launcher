@@ -1,0 +1,85 @@
+{
+  "name": "sequence-launcher",
+  "description": "Open applications, folders, websites, and app links with short key sequences.",
+  "scripts": {
+    "dev": "ray develop",
+    "build": "ray build -e dist",
+    "lint": "ray lint",
+    "fix-lint": "ray lint --fix",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "author": "raisedadead",
+  "license": "MIT",
+  "type": "commonjs",
+  "$schema": "https://www.raycast.com/schemas/extension.json",
+  "title": "Sequence Launcher",
+  "icon": "icon.png",
+  "categories": [
+    "Productivity"
+  ],
+  "platforms": [
+    "macOS"
+  ],
+  "commands": [
+    {
+      "name": "sequence-launcher",
+      "title": "Sequence Launcher",
+      "description": "Type a key sequence to open a destination.",
+      "mode": "view"
+    },
+    {
+      "name": "search-bindings",
+      "title": "Search Bindings",
+      "description": "Find a binding by name, path, or URL, and see its keys.",
+      "icon": "search-bindings.png",
+      "mode": "view"
+    },
+    {
+      "name": "bind-this",
+      "title": "Bind This",
+      "description": "Bind the selected Finder folder, a URL on the clipboard, or the front app. Type the keys to place it.",
+      "icon": "bind-this.png",
+      "mode": "view"
+    }
+  ],
+  "dependencies": {
+    "@raycast/api": "^2.10.1"
+  },
+  "devDependencies": {
+    "@raycast/eslint-config": "^2.2.0",
+    "@types/node": "^26.6.5",
+    "@types/react": "^19.3.0",
+    "eslint": "^10.13.0",
+    "prettier": "^3.9.10",
+    "typescript": "~6.0.3",
+    "vitest": "^5.0.5"
+  },
+  "preferences": [
+    {
+      "required": false,
+      "name": "bindingsFile",
+      "title": "Bindings File",
+      "description": "JSON file with your key bindings. Leave empty to use the file in the extension data folder.",
+      "type": "file"
+    },
+    {
+      "required": false,
+      "name": "layout",
+      "title": "Layout",
+      "description": "Grid shows each key as a large tile. List shows each key with its label, type, and path.",
+      "type": "dropdown",
+      "default": "grid",
+      "data": [
+        {
+          "title": "Grid",
+          "value": "grid"
+        },
+        {
+          "title": "List",
+          "value": "list"
+        }
+      ]
+    }
+  ]
+}

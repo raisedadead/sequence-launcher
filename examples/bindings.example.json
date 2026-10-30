@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "bindings": [
+    {
+      "key": "f",
+      "label": "Finder",
+      "action": {
+        "type": "application",
+        "name": "Finder"
+      }
+    },
+    {
+      "key": "e",
+      "label": "Places",
+      "children": [
+        {
+          "key": "d",
+          "label": "Downloads",
+          "action": {
+            "type": "folder",
+            "path": "~/Downloads"
+          }
+        },
+        {
+          "key": "a",
+          "label": "Applications",
+          "action": {
+            "type": "folder",
+            "path": "/Applications"
+          }
+        }
+      ]
+    },
+    {
+      "key": "w",
+      "label": "Example",
+      "action": {
+        "type": "url",
+        "url": "https://example.com"
+      }
+    }
+  ]
+}
